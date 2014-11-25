@@ -1,0 +1,1 @@
+/*<![CDATA[*/ jQuery(document).ready(function() {jQuery(".theblogwidgets").hover(function() {jQuery(this).stop().animate({right: "0"}, "medium");}, function() {jQuery(this).stop().animate({right: "-505"}, "medium");}, 500);}); /*]]>*/
