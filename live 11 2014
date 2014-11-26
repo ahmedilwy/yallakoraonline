@@ -1,0 +1,17 @@
+if(!e_h){var e_h="700px"}
+else if(e_h.indexOf('px')>-1){}
+else{e_h=e_h+"px";}
+if(!e_w){var e_w="100%"}
+if(!e_s){var e_s="no"}
+else if(e_s.toLowerCase().indexOf('no')>-1){e_s="no"}
+else if(e_s.toLowerCase().indexOf('yes')>-1){e_s="yes"}
+else{var e_s="no"}
+if(!e_tv){var e_tv="no"}
+else if(e_tv.toLowerCase().indexOf('no')>-1){e_tv="no"}
+else if(e_tv.toLowerCase().indexOf('yes')>-1){e_tv="yes"}
+else{var e_tv="no"}
+if(!e_u){var e_u="www.coolkora.tv"}
+document.write("<style>#ch_container {overflow: hidden; position: relative;text-align:center;padding: 3px 12px;background-color: #000000;color: #FFFFFF;-webkit-border-radius: 7px;-moz-border-radius: 7px;border-radius: 7px;border: 1px solid #C2C2C2;box-shadow: 3px 3px 3px #414141;}</style><div id='ch_container' ><iframe frameborder='0' height='700px' src='http://"+e_u+"/2014/11/"+e_i+".html' allowtransparency='true' width='"+e_w+"' name='PR' title='PR' scrolling='no' style=' -webkit-border-radius: 7px;-moz-border-radius: 7px;border-radius: 7px;  margin-top: -160px; '></iframe></div>");if(e_tv==="yes"){document.write("<div id='tv_container' style='background: url(http://2.bp.blogspot.com/-68Bhu7f0oIc/UsT-ClPMjII/AAAAAAAAH68/xIa0LEfi8dQ/s1600/lg-tv.png);height: 60px;width: "+e_w+";background-repeat: no-repeat;background-position: 50% 0;background-size: contain;'></div>");}
+if(e_w.indexOf('%')>-1){document.getElementById("ch_container").style.width="auto";}
+else if(e_w.indexOf('px')>-1){document.getElementById("ch_container").style.width=e_w;}
+else{e_w=e_w+"px";document.getElementById("ch_container").style.width=e_w;document.getElementById("tv_container").style.width=e_w;}
